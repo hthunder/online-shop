@@ -8,61 +8,83 @@
 	</head>
 	<body>
 		<div class="content">
-			<div class="container container_color_grey">
-				<ul class="nav">
-					<li class="nav__item">Главная</li>
-					<li class="nav__item">Категории</li>
-					<li class="nav__item">Корзина</li>
-					<li class="nav__item">Личный кабинет</li>
-					<li class="nav__item">Доставка</li>
-				</ul>
-			</div>
-			<div class="centering slider">
-				<img class="slider__img" src="img/slider.jpg" alt="">
-				<div class="slider__container">
-					<h2 class="slider__title">iPad Pro</h2>
-					<p class="slider__text">
-						Ваш будущий компьютер теперь не компьютер.
-					</p>
-					<a href="" class="button">Купить</a>
-				</div>
-			</div>
-			<div class="container">
-				<div class="promo">
-					<div class="promo__item item item_bg-color_blue">
-						<img class="item__img" src="img/reload.svg" alt="">
-						<p class="item__text">30 Дней на возврат</p>
-					</div>
-					<div class="promo__item item item_bg-color_yellow">
-						<img class="item__img" src="img/truck.svg" alt="">
-						<p class="item__text">Бесплатная доставка</p>
-					</div>
-					<div class="promo__item item item_bg-color_pink">
-						<img class="item__img" src="img/tools.svg" alt="">
-						<p class="item__text">Расширенная гарантия</p>
-					</div>
-					<div class="promo__item item item_bg-color_coral">
-						<img class="item__img" src="img/gift.svg" alt="">
-						<p class="item__text">Широкий ассортимент</p>
+			<header class="header-home">
+				<div class="header">
+					<div class="container container_justify-content_center">
+						<div class="header__logo">
+							iStore
+						</div>
+						<nav class="nav header__nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a class="link nav__link" href="#" >Главная</a></li>
+								<li class="nav__item"><a class="link nav__link" href="#" >Категории</a></li>
+								<li class="nav__item"><a class="link nav__link" href="#" >Корзина</a></li>
+								<li class="nav__item"><a class="link nav__link" href="#" >Войти</a></li>
+								<!-- <li class="nav__item"><a class="link nav__link" href="#" >Личный кабинет</a></li> Появляется после входа-->
+								<li class="nav__item"><a class="link nav__link" href="#" >Доставка</a></li>
+							</ul>
+						</nav>
+						<div class="header__basket">
+							<a class="link header__link" href="#"><img class="header__basket-img" src="img/commerce-and-shopping.svg" alt="Корзина"></a>	
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="latest-products">
-				<div class="latest-products__title">
-					<h2>Последние поступления</h2>
+				<div class="header-home__img">
+					<div class="container container_bg_landing">
+						<div class="header-home__container-inner">
+							<a class="button header-home__button" href="#" >К покупкам</a>
+						</div>
+					</div>
 				</div>
-				<div class="latest-products__container">
-					<img class="latest-products__item" src="img/macbook_air.jpg" alt="">
+			</header>
+			<section class="promo">
+				<div class="container">
+					<div class="promo__inner">
+						<div class="promo__item item">
+							<img class="item__img" src="img/reload.svg" alt="">
+							<p class="item__text">30 Дней на возврат</p>
+						</div>
+						<div class="promo__item item">
+							<img class="item__img" src="img/truck.svg" alt="">
+							<p class="item__text">Бесплатная доставка</p>
+						</div>
+						<div class="promo__item item">
+							<img class="item__img" src="img/tools.svg" alt="">
+							<p class="item__text">Расширенная гарантия</p>
+						</div>
+						<div class="promo__item item">
+							<img class="item__img" src="img/gift.svg" alt="">
+							<p class="item__text">Широкий ассортимент</p>
+						</div>
+					</div>
 				</div>
-				<div class="latest-products__container">
-					<img class="latest-products__item" src="img/ipad_pro_2020_12_9.jpg" alt="">
+			</section>			
+			<section class="latest-products">
+				<div class="container">
+					<div class="latest-products__title">
+						<h2 class="latest-products__title-text">Последние поступления</h2>
+					</div>
+					<div class="latest-products__items">
+						<div class="latest-products__container">
+							<a class="link" href="#">
+								<img class="latest-products__item" src="img/macbook_air.jpg" alt="macbook air">
+							</a>
+						</div>
+						<div class="latest-products__container">
+							<a class="link" href="#">
+								<img class="latest-products__item" src="img/ipad_pro_2020_12_9.jpg" alt="ipad pro">
+							</a>
+						</div>
+						<div class="latest-products__container">
+							<a class="link" href="#">
+								<img class="latest-products__item" src="img/apple_watch.jpg" alt="apple watch">
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="latest-products__container">
-					<img class="latest-products__item" src="img/air_pods_pro.jpg" alt="">
-				</div>
-			</div>
+			</section>
 			<div class="subscription">
-				<div class="centering">
+				<div class="container container_justify-content_center">
 					<div class="subscription__item">
 						<h3 class="subscription__title">iStore</h3>
 						<p class="subscription__text">
@@ -73,16 +95,16 @@
 							Приходите и убедитесь в этом сами!
 						</p>
 						<div class="social">
-							<a href="#" class="social__link">
+							<a class="social__link" href="#" >
 								<img src="img/vk.svg" alt="">
 							</a>
-							<a href="#" class="social__link">
+							<a class="social__link" href="#" >
 								<img src="img/facebook.svg" alt="">
 							</a>
-							<a href="#" class="social__link">
+							<a class="social__link" href="#" >
 								<img src="img/twitter.svg" alt="">
 							</a>
-							<a href="#" class="social__link">
+							<a class="social__link" href="#" >
 								<img src="img/instagram.svg" alt="">
 							</a>
 						</div>
@@ -102,8 +124,10 @@
 			</div>
 		</div>
 		<footer class="footer">
-			<div class="centering">
-				2020 © iStore - магазин современной техники. Все права защищены.
+			<div class="container">
+				<p class="footer__text">
+					2020 © iStore - магазин современной техники. Все права защищены.
+				</p>
 			</div>
 		</footer>
 	</body>
