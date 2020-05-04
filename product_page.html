@@ -3,52 +3,92 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main.min.css">
 		<title>Document</title>
 	</head>
 	<body>
 		<div class="content">
-			<div class="container container_color_grey">
-				<ul class="nav">
-					<li class="nav__item">Главная</li>
-					<li class="nav__item">Категории</li>
-					<li class="nav__item">Корзина</li>
-					<li class="nav__item">Личный кабинет</li>
-					<li class="nav__item">Доставка</li>
-				</ul>
-			</div>
-			<div class="product">
-				<div class="container">
-					<div class="product__part">
-						<h1 class="product__title"></h1>
-						<img class="product__img"></img>
+			<header class="header">
+				<div class="container container_justify-content_center">
+					<div class="header__logo">
+						<a class="link header__logo-link " href="index.html">iStore<a>
 					</div>
-					<div class="product__part">
-						<div class="product__order"></div>
-						<p class="product__description"></p>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a class="link nav__link" href="index.html" >Главная</a></li>
+							<li class="nav__item"><a class="link nav__link" href="#" >Категории</a></li>
+							<li class="nav__item"><a class="link nav__link" href="#" >Корзина</a></li>
+							<li class="nav__item"><a class="link nav__link" href="#" >Войти</a></li>
+							<!-- <li class="nav__item"><a class="link nav__link" href="#" >Личный кабинет</a></li> Появляется после входа-->
+							<li class="nav__item"><a class="link nav__link" href="#" >Доставка</a></li>
+						</ul>
+					</nav>
+					<div class="header__basket">
+						<a class="link header__link" href="#"><img class="header__basket-img" src="img/commerce-and-shopping.svg" alt="Корзина"></a>	
 					</div>
 				</div>
-				<!-- <h1 class="product__title">Apple iPhone SE 256 ГБ, черный</h1>
-				<img src="img/iPhone_SE_256_black.jpg" alt="" class="product__img">
-				
-				<p class="product__description">
-					Классический компактный дизайн, самый мощный процессор iPhone и масса других достоинств. 
-					iPhone SE создан, чтобы стать вашим идеальным смартфоном.
-					Великолепный дисплей Retina HD 4,7 дюйма. 
-					Скорость и безопасность Touch ID. Защита от воды при погружении на глубину до 1 метра на 30 минут. 
-					Всё это в тонком и лёгком корпусе.
-					Процессор A13 Bionic — самый быстрый в линейке iPhone. 
-					Приложения, игры и всё остальное работает с невероятной скоростью.
-				</p>
-				<span class="product__price">53990 Р</span>
-				<form action="">
-					<input class="button" type="submit" value="Предзаказ">
-				</form> -->
-			</div>
+			</header>
+			<section class="product">
+				<div class="container container_justify-content_center container_flex-direction_column">
+					<div class="product__review">
+						<h1 class="product__title">Apple iPad Pro (2020) 12,9" Wi-Fi + Cellular 128 ГБ, «серый космос»</h1>
+						<img class="product__img" src="img/ipad_pro_2020_12_9.jpg" alt="ipad pro 2020" >
+						<span class="product__price">100 990 </span>
+						<form action="" class="product__order">
+							<input class="product__order-button" type="submit" value="Добавить в корзину">
+						</form>
+					</div>
+					<div class="product__description">
+						<p class="product__description-text">
+							Apple iPad Pro – это планшет под управлением iOS, сравнимый по мощности с ноутбуком или ПК. Процессор A12Z Bionic обеспечивает непрерывный уровень производительности без нагрева и мгновенный отклик при работе в многозадачном режиме. Стройте объёмные чертежи в графических программах или погружайтесь в мир виртуальной реальности – вы не заметите и намёка на промедления и баги.
+						</p>
+						<h2 class="product__description-title">
+							НЕ ОТОРВАТЬ ВЗГЛЯДА
+						</h2>
+						<p class="product__description-text">
+							На безрамочный дисплей Liquid Retina диагональю 12,9 дюйма выводится изображение со сверхточной цветопередачей, высокой яркостью, гармоничной контрастностью и широкими углами обзора. Такая картинка точно не оставит вас равнодушными!
+						</p>
+						<h2 class="product__description-title">
+							БЕЗУСЛОВНЫЙ ПРОФИ
+						</h2>
+						<p class="product__description-text">
+							Два широкоугольных объектива основной камеры с разрешением 10 и 12 Мп позволят запечатлеть важные моменты в самом лучшем качестве. Дополнительно вы сможете снимать кинематографическое видео в формате 4K. Студийного эффекта при этом добавит встроенная система микрофонов. И не беспокойтесь – памяти 128 Гб вам хватит на хранение всех файлов.
+						</p>
+						<h2 class="product__description-title">
+							ПРЕКРАСНЫЕ АВТОПОРТРЕТЫ
+						</h2>
+						<p class="product__description-text">
+							Фронталка 7 Мп служит не только для создания отличных селфи. Она играет ключевую роль в разблокировке экрана с помощью FaceID и позволяет общаться с близкими в бесчисленных мессенджерах.
+						</p>
+						<h2 class="product__description-title">
+							НОВАЯ ВЕХА
+						</h2>
+						<p class="product__description-text">
+							Невероятная по красоте и размеру бабочка приземляется на ваш кухонный стол, пока убранство зала превращается в средневековые покои. Это сон? Нет, с чувствительным сканером LiDAR вы с трудом отличите объекты дополненной реальности от настоящих физических предметов. Познавайте Вселенные различных игр или занимайтесь более приземлёнными делами. Например, планируйте расположение мебели и декора ещё до их покупки в приложении IKEA Place.
+						</p>
+
+						<h2 class="product__description-title">
+							ДОСТОИН ВНИМАНИЯ
+						</h2>
+						<p class="product__description-text">
+							Ёмкий аккумулятор обеспечит вам до 10 часов автономности. Работайте, творите, смотрите хоть целый день! Тонкий корпус из лёгкого и прочного алюминия весит меньше 700 г, так что Apple iPad Pro можно взять с собой в любые поездки.
+						</p>
+
+						<h2 class="product__description-title">
+							ПЕРЕДАЧА ДАННЫХ
+						</h2>
+						<p class="product__description-text">
+							Обменивайтесь информацией через Wi-Fi и Bluetooth. А для подключения аксессуаров используйте порт USB Type-C.
+						</p>
+					</div>
+				</div>
+			</section>
 		</div>
 		<footer class="footer">
-			<div class="centering">
-				2020 © iStore - магазин современной техники. Все права защищены.
+			<div class="container">
+				<p class="footer__text">
+					2020 © iStore - магазин современной техники. Все права защищены.
+				</p>
 			</div>
 		</footer>
 	</body>
