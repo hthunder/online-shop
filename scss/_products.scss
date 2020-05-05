@@ -38,38 +38,32 @@
 @media (max-width: 992px) {
 	.assortment {
 		&__filter-wrapper {
-			width: 33.333%;
+			width: 100%;
+			padding: 25px 0;
 		}
 		&__grid {
-			width: 66.666%;
+			width: 100%;
 		}
 		&__item {
 			width: 50%;
+			padding: 20px 55px;
 		}
 	}
 }
 
 @media (max-width: 768px) {
 	.assortment {
-		&__filter-wrapper {
-			width: 50%;
-		}
-		&__grid {
-			width: 50%;
-		}
 		&__item {
 			width: 100%;
+			padding: 20px 125px;
 		}
 	}
 }
 
 @media (max-width: 576px) {
 	.assortment {
-		&__filter-wrapper {
-			width: 100%;
-		}
-		&__grid {
-			width: 100%;
+		&__item {
+			padding: 20px 75px;	
 		}
 	}
 }
@@ -77,19 +71,28 @@
 .filter {
 	list-style: none;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
 	&__element {
 		padding: 10px 15px;
 		text-align: center;
 	}
-	// &__element::before {
-	// 	content: "";
-	// 	display: inline-block;
-	// 	width: 5px;
-	// 	height: 5px;
-	// 	background-color: #000;
-	// }
 	&__link {
 		font-size: 18px;
 		color: #000;
+	}
+}
+
+@media (max-width: 992px) {
+	.filter {
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 576px) {
+	.filter {
+		flex-direction: column;
 	}
 }
