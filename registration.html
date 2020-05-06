@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="content">
+		<header class="header">
+			<div class="container container_justify-content_center">
+				<div class="header__logo">
+					<a class="link header__logo-link " href="index.html">iStore<a>
+				</div>
+				<nav class="nav header__nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="link nav__link" href="index.html">Главная</a></li>
+						<li class="nav__item"><a class="link nav__link" href="#">Товары</a></li>
+						<li class="nav__item"><a class="link nav__link" href="#">Корзина</a></li>
+						<!-- Trigger/Open The Modal -->
+						<li class="nav__item"><a class="link nav__link" id="modalBtn" href="">Войти</a></li>
+						<!-- The Modal -->
+						<div class="modal" id="myModal">
+							<!-- Modal content -->
+							<div class="modal__content">
+								<span class="close">&times;</span>
+								<div class="modal__inner">
+									<div class="modal__form">
+										<h2 class="modal__title">У меня уже есть аккаунт</h2>
+										<form class="modal__login-form">
+											<div class="modal__login-wrapper">
+												<label class="label">
+													<input class="input modal__form-item" placeholder="Ваш email" name="email" type="email"></label><label class="label">
+													<input class="input modal__form-item" placeholder="Пароль" name="pass1" type="password">
+												</label>
+											</div>
+											
+											<button class="button button_accent button_fs_14 modal__button" id="login-submit">Войти</button>
+										</form>
+									</div>
+									<div class="modal__form">
+										<h2 class="modal__title">Регистрация</h2>
+										<form class="modal__registration-form">
+											<label class="label">
+												<input class="input modal__form-item" placeholder="Ваше имя" name="name" type="text">
+											</label>
+											<label class="label">
+												<input class="input modal__form-item" placeholder="Введите пароль" name="pass1" type="password">
+											</label>
+											<label class="label">
+												<input class="input modal__form-item" placeholder="Повторите пароль" name="pass2" type="password">
+											</label>
+											<label class="label">
+												<input class="input modal__form-item" placeholder="Ваш email" name="email" type="email">
+											</label>
+											<div class="modal__checkbox">
+												<input class="modal__checkbox-input" type="checkbox">
+												<p class="modal__checkbox-text">Подтверждаю свое согласие с </p><a class="link modal__checkbox-text" href="#">сервисными условиями</a>	
+											</div>
+											<button class="button button_accent button_fs_14 modal__button" id="signup-submit">Зарегистрироваться</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <li class="nav__item"><a class="link nav__link" href="#" >Личный кабинет</a></li> Появляется после входа-->
+						<li class="nav__item"><a class="link nav__link" href="#">Доставка</a></li>
+					</ul>
+				</nav>
+				<div class="header__basket">
+					<a class="link header__link" href="#"><img class="header__basket-img"
+							src="img/commerce-and-shopping.svg" alt="Корзина"></a>
+				</div>
+			</div>
+		</header>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="footer__text">
+				2020 © iStore - магазин современной техники. Все права защищены.
+			</p>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
