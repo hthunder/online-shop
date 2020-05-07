@@ -1,0 +1,30 @@
+.delivery {
+	&__text {
+		font-size: 15px;
+    	line-height: 21px;
+	}
+	&__list {
+		list-style: none;
+	}
+	&__time-section {
+		margin: 20px 0;
+	}
+	&__terms {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__terms-item {
+		flex-basis: 100%;
+		padding: 20px 0px;
+		display: flex;
+	}
+	&__type {
+		flex-basis: 30%;
+		flex-shrink: 0;
+		padding-right: 5px;
+	}
+	&__type-terms {
+		flex-basis: 70%;
+		padding-left: 5px; 
+	}
+}
