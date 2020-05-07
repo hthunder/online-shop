@@ -1,9 +1,3 @@
-.label {
-	flex-basis: 50%;
-	min-width: 200px;
-	flex-grow: 1;
-}
-
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -63,6 +57,11 @@
 	}
 	&__checkbox-link {
 		color: blue;
+	}
+	&__label {
+		flex-basis: 50%;
+		min-width: 200px;
+		flex-grow: 1;
 	}
   }
   
