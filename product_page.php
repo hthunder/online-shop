@@ -1,44 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/main.min.css">
-		<title>Document</title>
-	</head>
+	<?php include("templates/_head.php"); ?>
 	<body>
 		<div class="content">
-			<header class="header">
-				<div class="container container_justify-content_center">
-					<div class="header__logo">
-						<a class="link header__logo-link " href="index.html">iStore<a>
-					</div>
-					<nav class="nav header__nav">
-						<ul class="nav__list">
-							<li class="nav__item"><a class="link nav__link" href="index.html" >Главная</a></li>
-							<li class="nav__item"><a class="link nav__link" href="#" >Товары</a></li>
-							<li class="nav__item"><a class="link nav__link" href="#" >Корзина</a></li>
-							<li class="nav__item"><a class="link nav__link" href="#" >Войти</a></li>
-							<!-- <li class="nav__item"><a class="link nav__link" href="#" >Личный кабинет</a></li> Появляется после входа-->
-							<li class="nav__item"><a class="link nav__link" href="#" >Доставка</a></li>
-						</ul>
-					</nav>
-					<div class="header__basket">
-						<a class="link header__link" href="#"><img class="header__basket-img" src="img/commerce-and-shopping.svg" alt="Корзина"></a>	
-					</div>
-				</div>
-			</header>
+			<?php include("templates/_header.php"); ?>
 			<section class="product">
 				<div class="container container_justify-content_center container_flex-direction_column">
 					<div class="product__review">
-						<h1 class="product__title">Apple iPad Pro (2020) 12,9" Wi-Fi + Cellular 128 ГБ, «серый космос»</h1>
-						<img class="product__img" src="img/ipad_pro_2020_12_9.jpg" alt="ipad pro 2020" >
-						<span class="product__price">100 990 </span>
+						<h1 class="product__title"><?php echo $product['title']; ?></h1>
+						<img class="product__img" src="img/products/<?php echo $product['img'];?>" alt="<?php echo $product['title']; ?>" >
+						<span class="product__price"><?php echo $product['price']; ?></span>
 						<form action="" class="product__order">
 							<input class="product__order-button" type="submit" value="Добавить в корзину">
 						</form>
 					</div>
 					<div class="product__description">
+						<p class="product__description-text">
+							<?php echo $product['description']; ?>
+						</p>
+					</div>
+					<!-- <div class="product__description">
 						<p class="product__description-text">
 							Apple iPad Pro – это планшет под управлением iOS, сравнимый по мощности с ноутбуком или ПК. Процессор A12Z Bionic обеспечивает непрерывный уровень производительности без нагрева и мгновенный отклик при работе в многозадачном режиме. Стройте объёмные чертежи в графических программах или погружайтесь в мир виртуальной реальности – вы не заметите и намёка на промедления и баги.
 						</p>
@@ -80,16 +61,10 @@
 						<p class="product__description-text">
 							Обменивайтесь информацией через Wi-Fi и Bluetooth. А для подключения аксессуаров используйте порт USB Type-C.
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</section>
 		</div>
-		<footer class="footer">
-			<div class="container">
-				<p class="footer__text">
-					2020 © iStore - магазин современной техники. Все права защищены.
-				</p>
-			</div>
-		</footer>
+		<?php include("templates/_footer.php"); ?>
 	</body>
 </html>

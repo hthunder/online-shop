@@ -1,11 +1,8 @@
-<div class="copyright">
-	<?php
-		function currentDate() {
-			$date = date('Y');
-			if ($date != '2020') {
-				return "-" . $date;
-			}
-		}
-	?>
-	<p>© Интернет магазин "techStore", 2020<?php echo currentDate(); ?></p>
-</div>
+<footer class="footer">
+	<div class="container">
+		<p class="footer__text">
+			2020 © iStore - магазин современной техники. Все права защищены.
+		</p>
+	</div>
+</footer>
+<script src="js/main.js"></script>

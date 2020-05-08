@@ -3,7 +3,7 @@
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
-	$dbname = "rush_shop";
+	$dbname = "rush_online_shop";
 	$con = mysqli_connect($servername, $username, $password);
 	if($con === false){
 		die("ERROR: Could not connect. " . mysqli_connect_error());
@@ -38,7 +38,7 @@
 		email VARCHAR(100) NOT NULL UNIQUE,
 		password VARCHAR(100) NOT NULL,
 		rights VARCHAR(10) NOT NULL,
-		name VARHAR(100) NOT NULL,
+		name VARCHAR(100) NOT NULL,
 		birthday VARCHAR(100) NOT NULL,
 		sex VARCHAR(20) NOT NULL
 	) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1";

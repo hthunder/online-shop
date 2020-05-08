@@ -1,28 +1,24 @@
-<div class="header">
-	<div class="row">
-		<div class="col-sm-6">
-			<a href="index.php" class="site-logo">
-				<span>tech</span>Store
-			</a>
+<header class="header">
+	<div class="container container_justify-content_center">
+		<div class="header__logo">
+			<a class="link header__logo-link " href="index.php">iStore<a>
 		</div>
-		<div class="col-sm-6">
-			<div class="admin-link">
-				<?php if (isset($_SESSION['login']) && $_SESSION['login'] == 'on'): ?>
-					<a href="./admin.php">
-						<img width="38" src="img/icons/padlock.svg" alt="">
-					</a>	
-					<a href="./logout.php">
-						<img width="38" src="img/icons/logout.svg" alt="">
-					</a>
-				<?php else: ?>
-					<a href="./login.php">
-						<img width="38" src="img/icons/login.svg" alt="">
-					</a>
-					<a href="#">
-						<img width="38" src="img/icons/shopping-cart.svg" alt="">
-					</a>	
-				<?php endif; ?>
-			</div>
+		<nav class="nav header__nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a class="link nav__link" href="index.php">Главная</a></li>
+				<li class="nav__item"><a class="link nav__link" href="products.php">Товары</a></li>
+				<li class="nav__item"><a class="link nav__link" href="basket.php">Корзина</a></li>
+				<!-- Trigger/Open The Modal -->
+				<li class="nav__item"><a class="link nav__link" id="modalBtn" href="">Войти</a></li>
+				<!-- The Modal -->
+				<?php include ("_modal.php") ?>
+				<!-- <li class="nav__item"><a class="link nav__link" href="#" >Личный кабинет</a></li> Появляется после входа-->
+				<li class="nav__item"><a class="link nav__link" href="delivery.php">Доставка</a></li>
+			</ul>
+		</nav>
+		<div class="header__basket">
+			<a class="link header__link" href="basket.php"><img class="header__basket-img"
+					src="img/commerce-and-shopping.svg" alt="Корзина"></a>
 		</div>
 	</div>
-</div>
+</header>

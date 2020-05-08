@@ -1,42 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/main.min.css">
-		<title>Document</title>
-	</head>
+	<?php include("templates/_head.php"); ?>
 	<body>
 		<div class="content">
-			<header class="header-home">
-				<div class="header">
-					<div class="container container_justify-content_center">
-						<div class="header__logo">
-							<a class="link header__logo-link" href="index.html">iStore</a>
-						</div>
-						<nav class="nav header__nav">
-							<ul class="nav__list">
-								<li class="nav__item"><a class="link nav__link" href="index.html" >Главная</a></li>
-								<li class="nav__item"><a class="link nav__link" href="#" >Товары</a></li>
-								<li class="nav__item"><a class="link nav__link" href="#" >Корзина</a></li>
-								<li class="nav__item"><a class="link nav__link" href="#" >Войти</a></li>
-								<!-- <li class="nav__item"><a class="link nav__link" href="#" >Личный кабинет</a></li> Появляется после входа-->
-								<li class="nav__item"><a class="link nav__link" href="#" >Доставка</a></li>
-							</ul>
-						</nav>
-						<div class="header__basket">
-							<a class="link header__link" href="#"><img class="header__basket-img" src="img/commerce-and-shopping.svg" alt="Корзина"></a>	
-						</div>
-					</div>
-				</div>
-				<div class="header-home__img">
-					<div class="container container_bg_landing">
-						<div class="header-home__container-inner">
-							<a class="button header-home__button" href="#" >К покупкам</a>
-						</div>
-					</div>
-				</div>
-			</header>
+			<?php include("templates/_header.php") ?>
 			<section class="promo">
 				<div class="container">
 					<div class="promo__inner">
@@ -123,12 +90,6 @@
 				</div>
 			</section>
 		</div>
-		<footer class="footer">
-			<div class="container">
-				<p class="footer__text">
-					2020 © iStore - магазин современной техники. Все права защищены.
-				</p>
-			</div>
-		</footer>
+		<?php include("templates/_footer.php") ?>
 	</body>
 </html>
